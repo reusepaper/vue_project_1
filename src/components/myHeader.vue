@@ -4,9 +4,7 @@
       <v-toolbar-title class="white--text">YEONJI'S BLOG</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn class="white--text" flat>Post</v-btn>
-        <v-btn class="white--text" flat>Portfolio</v-btn>
-        <v-btn class="white--text" flat>Login</v-btn>
+        <v-btn v-for="link in links" :key="link.text" :to="link.page" class="white--text" flat>{{link.text}}</v-btn>
       </v-toolbar-items>
     </v-toolbar>
   </div>
@@ -17,9 +15,14 @@
 export default {
 	name: 'myHeader',
 	props: {
-		text: {type: String}
 	},
-	methods: {
-	},
+  data: () => ({
+    links: [
+      {text:'Home', page:'/'},
+      {text:'Post', page:'/post'},
+      {text:'Portfolio', page:'/portfolio'},
+      {text:'Login', page:'/login'}
+    ]
+  })
 }
 </script>
