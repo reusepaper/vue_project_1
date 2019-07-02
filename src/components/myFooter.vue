@@ -1,5 +1,5 @@
 <template>
-  <v-footer height="auto" color="teal">
+  <v-footer height="auto" color="pink lighten-3">
     <v-layout justify-center row wrap>
       <v-btn v-for="link in links" :key="link.text" :to="link.page" color="white" flat round>
         {{ link.text }}

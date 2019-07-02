@@ -1,6 +1,6 @@
 <template>
 <div class="hide-overflow" style="position: relative;">
-    <v-toolbar fixed color="teal">
+    <v-toolbar fixed color="pink lighten-3">
       <v-btn flat icon to="/" color="white">
         <v-icon>home</v-icon>
       </v-btn>

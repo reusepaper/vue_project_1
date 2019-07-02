@@ -4,6 +4,7 @@ import 'vuetify/dist/vuetify.min.css'
 import VueSimplemde from 'vue-simplemde'
 import 'simplemde/dist/simplemde.min.css'
 import 'font-awesome/css/font-awesome.min.css'
+import '@mdi/font/css/materialdesignicons.css'
 
 import App from './App.vue'
 import router from './router'
@@ -20,6 +21,10 @@ Vue.use(Vuetify, {
 		accent: '#8c9eff',
 		error: '#b71c1c'
 	}
+})
+
+Vue.use(Vuetify, {
+  iconfont: 'mdi'
 })
 
 Vue.use(VueSimplemde)

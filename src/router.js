@@ -5,9 +5,11 @@ import PostPage from './views/PostPage.vue'
 import PortfolioPage from './views/PortfolioPage.vue'
 import LoginPage from './views/LoginPage.vue'
 import Vuetify from 'vuetify'
+import BackToTop from 'vue-backtotop'
 
 Vue.use(Router)
 Vue.use(Vuetify)
+Vue.use(BackToTop)
 
 export default new Router({
   mode: 'history',
