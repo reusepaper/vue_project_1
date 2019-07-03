@@ -4,8 +4,9 @@
     <ImgBanner imgSrc="https://source.unsplash.com/random/1600x900">
       <div style="line-height:1.2em;font-size:1.2em;font-weight:900;color:white;" slot="text">Portfolio Write</div>
     </ImgBanner>
+    
     <v-container>
-
+      <PortfolioWrite></PortfolioWrite>
     </v-container>
     <myFooter></myFooter>
   </div>

@@ -7,6 +7,7 @@ import PortfolioWritePage from './views/PortfolioWritePage.vue'
 import LoginPage from './views/LoginPage.vue'
 import Vuetify from 'vuetify'
 import BackToTop from 'vue-backtotop'
+import VueSimplemde from 'vue-simplemde'
 
 Vue.use(Router)
 Vue.use(Vuetify)

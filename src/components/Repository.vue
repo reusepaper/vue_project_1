@@ -4,7 +4,7 @@
 
       <v-flex xs8>
         <h2 class="font-weight-regular">{{repos.path_with_namespace}}</h2>
-        <p class="subheading mb-1 grey--text text--darken-1 font-weight-light">{{repos.namespace.name}}</p>
+        <p class="subheading mb-1 grey--text text--darken-1 font-weight-light" v-line-clamp="1">{{repos.namespace.name}}</p>
       </v-flex>
 
     </v-layout>

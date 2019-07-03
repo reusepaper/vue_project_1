@@ -10,6 +10,7 @@
         <v-btn to="/post" class="white--text" flat>Post</v-btn>
         <v-btn to="/portfolio" class="white--text" flat>Portfolio</v-btn>
         <v-btn to="/login" class="white--text" flat>Login</v-btn>
+        <v-btn class="white--text" flat><vue-bookmark><v-icon>star</v-icon></vue-bookmark></v-btn>
       </v-toolbar-items>
       <v-toolbar-side-icon class="hidden-sm-and-up white--text" @click="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>
