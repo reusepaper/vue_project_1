@@ -6,6 +6,8 @@ import 'simplemde/dist/simplemde.min.css'
 import 'font-awesome/css/font-awesome.min.css'
 import '@mdi/font/css/materialdesignicons.css'
 import lineClamp from 'vue-line-clamp'
+import BrowserDetect from 'vue-browser-detect-plugin';
+import "vue-browser-detect-plugin/dist/vue-browser-detect-plugin.umd.js"
 
 import App from './App.vue'
 import router from './router'
@@ -13,6 +15,8 @@ import store from './store'
 import './registerServiceWorker'
 
 Vue.config.productionTip = false
+
+Vue.use(BrowserDetect)
 
 Vue.use(Vuetify, {
 	iconfont: 'fa',
@@ -29,7 +33,7 @@ Vue.use(Vuetify, {
 })
 
 Vue.use(lineClamp, {
-  
+
 })
 
 Vue.use(VueSimplemde)
