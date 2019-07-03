@@ -5,6 +5,7 @@ import VueSimplemde from 'vue-simplemde'
 import 'simplemde/dist/simplemde.min.css'
 import 'font-awesome/css/font-awesome.min.css'
 import '@mdi/font/css/materialdesignicons.css'
+import lineClamp from 'vue-line-clamp'
 
 import App from './App.vue'
 import router from './router'
@@ -25,6 +26,10 @@ Vue.use(Vuetify, {
 
 Vue.use(Vuetify, {
   iconfont: 'mdi'
+})
+
+Vue.use(lineClamp, {
+  
 })
 
 Vue.use(VueSimplemde)

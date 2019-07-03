@@ -2,8 +2,8 @@
   <v-layout py-4 h-100>
     <v-flex row>
       <div class="caption">{{formatedDate}}</div>
-      <h2 class="color-333 headline font-weight-light">{{title}}</h2>
-      <p class="mb-1 color-666 font-weight-light subheading">{{body}}</p>
+      <h2 class="color-333 headline font-weight-light" v-line-clamp="1">{{title}}</h2>
+      <p class="mb-1 color-666 font-weight-light subheading" v-line-clamp="3">{{body}}</p>
     </v-flex>
   </v-layout>
 </template>
@@ -34,4 +34,3 @@ export default {
     height: 100%;
   }
 </style>
-

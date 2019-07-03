@@ -4,8 +4,8 @@
     </v-img>
     <v-card-title primary-title>
       <div>
-        <div class="headline">{{title}}</div>
-        <span class="grey--text">{{body}}</span>
+        <div class="headline" v-line-clamp="1">{{title}}</div>
+        <span class="grey--text" v-line-clamp="3">{{body}}</span>
       </div>
     </v-card-title>
   </v-card>
@@ -27,4 +27,3 @@ export default {
 	}
 }
 </script>
-

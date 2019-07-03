@@ -14,7 +14,7 @@
       <v-toolbar-side-icon class="hidden-sm-and-up white--text" @click="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>
 
-    <v-navigation-drawer app right disable-resize-watcher v-model="drawer" class="teal">
+    <v-navigation-drawer app right disable-resize-watcher v-model="drawer" class="pink lighten-3">
       <v-list>
         <v-list-tile @click="$router.push('/post')">
           <v-list-tile-content>
