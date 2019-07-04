@@ -10,9 +10,25 @@
         <v-btn to="/post" class="white--text" flat>Post</v-btn>
         <v-btn to="/portfolio" class="white--text" flat>Portfolio</v-btn>
         <v-btn to="/login" class="white--text" flat>Login</v-btn>
-        <v-btn class="white--text" flat><a href="#" id="favorite" title="즐겨찾기 등록" style="color:white;text-decoration:none">
-          <v-icon>star</v-icon></a>
-        </v-btn>
+        <v-dialog v-model="dialog" width="500">
+          <template v-slot:activator="{ on }">
+            <v-btn class="white--text" flat v-on="on">
+              <v-icon >star</v-icon>
+            </v-btn>
+          </template>
+          <v-card>
+            <v-card-title class="headline pink lighten-3 white--text">
+              안내
+            </v-card-title>
+            <v-card-text>
+              즐겨찾기에 추가하려면 Ctrl+D를 누르세요
+            </v-card-text>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn color="pink lighten-3" class="white--text" @click="dialog = false">확인</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
       </v-toolbar-items>
       <v-toolbar-side-icon class="hidden-sm-and-up white--text" @click="drawer = !drawer"></v-toolbar-side-icon>
     </v-toolbar>
@@ -46,7 +62,8 @@ export default {
   props: {},
   data(){
     return {
-      drawer:false
+      drawer:false,
+      dialog:false
     }
   }
 }
